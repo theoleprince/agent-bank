@@ -9,7 +9,7 @@ function Home() {
         <main>
         <Features />
         </main>
-        <Footer />
+        <Footer /> 
     </div>
 }
 
