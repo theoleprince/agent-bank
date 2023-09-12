@@ -10,7 +10,6 @@ function Home() {
       <main>
         <Features />
       </main>
-      <Footer />
     </div>
   );
 }

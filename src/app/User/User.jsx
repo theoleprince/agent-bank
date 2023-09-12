@@ -1,5 +1,4 @@
 import CardAccountUser from "../components/Card-account-user/CardAccountUser";
-import Footer from "../components/Footer/Footer";
 import "./User.css";
 
 function User() {
@@ -39,7 +38,6 @@ function User() {
           <CardAccountUser key={item.id} account={item} />
         ))}
       </main>
-      <Footer />
     </div>
   );
 }
