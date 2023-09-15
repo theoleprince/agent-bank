@@ -7,9 +7,7 @@ function Home() {
   return (
     <div>
       <Banner />
-      <main>
-        <Features />
-      </main>
+      <Features />
     </div>
   );
 }

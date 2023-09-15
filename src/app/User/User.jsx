@@ -23,8 +23,7 @@ function User() {
     },
   ];
   return (
-    <div>
-      <main className="main bg-dark">
+      <div className="bg-dark">
         <div className="header">
           <h1>
             Welcome back
@@ -37,8 +36,7 @@ function User() {
         {data.map((item) => (
           <CardAccountUser key={item.id} account={item} />
         ))}
-      </main>
-    </div>
+      </div>
   );
 }
 

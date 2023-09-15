@@ -6,13 +6,19 @@ import store from "../stores";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return <Provider store={store}>
-    <Router>
-      <Header />
-      <AppRouting />
-      <Footer />
-    </Router>
-  </Provider>;
+  return (
+    <div className="body">
+      <Provider store={store}>
+      <Router>
+          <Header />
+          <main className="main">
+            <AppRouting />
+          </main>
+          <Footer />
+      </Router>
+    </Provider>
+    </div>
+  );
 }
 
 export default App;
