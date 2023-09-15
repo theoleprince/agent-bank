@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import CardAccountUser from "../components/Card-account-user/CardAccountUser";
-import Footer from "../components/Footer/Footer";
+import Modal from "../components/modal/modal";
 import "./User.css";
 
 function User() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const data = [
     {
       id: 1,
@@ -24,23 +26,23 @@ function User() {
     },
   ];
   return (
-    <div>
-      <main className="main bg-dark">
+     <div>
+       <main className="main bg-dark">
         <div className="header">
           <h1>
             Welcome back
             <br />
             Tony Jarvis!
           </h1>
-          <button className="edit-button">Edit Name</button>
+          <button className="edit-button" onClick={() => setModalIsOpen(true)}>Edit Name</button>
         </div>
         <h2 className="sr-only">Accounts</h2>
         {data.map((item) => (
           <CardAccountUser key={item.id} account={item} />
         ))}
       </main>
-      <Footer />
-    </div>
+      <Modal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>
+     </div>
   );
 }
 

@@ -1,17 +1,13 @@
 import Banner from "../components/Banner/Banner";
 import Features from "../components/Features/Features";
-import Footer from "../components/Footer/Footer";
 import "./Home.css";
 
 function Home() {
   return (
-    <div>
+    <main className="main">
       <Banner />
-      <main>
-        <Features />
-      </main>
-      <Footer />
-    </div>
+      <Features />
+    </main>
   );
 }
 
