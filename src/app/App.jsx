@@ -11,9 +11,7 @@ function App() {
       <Provider store={store}>
         <Router>
           <Header />
-          {/* <main className="main"> */}
           <AppRouting />
-          {/* </main> */}
           <Footer />
         </Router>
       </Provider>
