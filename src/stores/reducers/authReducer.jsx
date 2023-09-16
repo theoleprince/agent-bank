@@ -11,6 +11,12 @@ const initialState = {
           isAuthenticated: true,
           user: action.payload,
         };
+      case 'PROFIL_USER':
+        return {
+          ...state,
+          isAuthenticated: true,
+          user: action.payload,
+        };
       case 'LOGOUT':
         return {
           ...state,
