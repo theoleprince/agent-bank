@@ -41,7 +41,7 @@ class UserService {
 
   async putUserProfile(token, dto) {
     const requestOptions = {
-      method: "POST",
+      method: "PUT",
       headers: {
         Accept: "application/json",
         Authorization: 'Bearer ' + token,
